@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:background="@drawable/customborder">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/blogId"
+        android:text="1"
+        android:visibility="invisible"/>
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/blogPic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/lungs"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/blogPic"
+        android:id="@+id/blogTitle"
+        android:layout_marginLeft="15dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:text="Lungs Demo"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/blogDiscriptions"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/blogPic"
+        android:layout_below="@+id/blogTitle"
+        android:text="@string/demo_text"
+        android:maxLines="3"
+        android:textColor="#808080"/>
+
+
+
+</RelativeLayout>
